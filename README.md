@@ -5,7 +5,7 @@ A static, self-contained site: one `index.html`, an `assets/` folder, and the wh
 ## Files
 
 - `index.html` — the whole site: HTML, CSS and JavaScript in one file
-- `assets/` — logo, Index wheel, white paper cover, co-founder headshots
+- `assets/` — logo, Index wheel, white paper cover, co-founder headshots. `logo-full-light.png` and `logo-mark-light.png` are copies of the logos with the glow and orange flares removed and the gold deepened so it reads on ivory, used in light mode.
 - `white-paper.pdf` — the download offered after the white paper form is submitted
 
 ## Pages
@@ -38,8 +38,17 @@ Vercel or Cloudflare Pages also work, but their form handling would need a repla
 - **Social sharing:** add an Open Graph image (the white paper cover works well) and a favicon (the CHI monogram).
 - **Gating:** to keep the PDF from being shared directly, serve it from a signed or expiring URL, or email it after signup instead of linking to it.
 - **Headshot:** Warren's photo is only 200×200 px; swap in a larger original.
+- **Light-mode artwork:** the light logos were generated from the dark-background PNGs, and the Index wheel is shown on a dark disc in light mode. Proper light-background exports from the brand files would look cleaner.
 
 ## Brand
 
 - Colors: background #110010, plum #2A0F24 / #3D1735, mauve #7A4A6C, gold #D4A64A, gold highlight #F2CF7A, champagne #F3E3BF, muted #A8909F
 - Fonts (Google Fonts): Source Serif 4 for headings, Inter for body text
+
+## Light and dark themes
+
+The site follows the visitor's OS setting (`prefers-color-scheme`) until they use the sun/moon toggle in the nav; their choice is then saved in `localStorage` under `theme`. A small script in `<head>` sets `data-theme` on `<html>` before the page paints, so there is no flash of the wrong theme.
+
+All colors are CSS variables in `:root` (dark) and `[data-theme="light"]`. Translucent colors use RGB-triplet variables such as `rgba(var(--plum-rgb),.55)`, so each rule keeps its own opacity while the theme swaps the color. Avoid hardcoding colors in new rules.
+
+- Light palette: background ivory #FBF6EC, surfaces #F6EEDF / #F3E8D4, text #3A1A33, headings #2A0F24, muted #6E5566, gold text #7E5B14 / #7A5810 (darkened to meet WCAG AA on ivory). Gold fills such as buttons and the Platinum tile keep the bright brand gold.
