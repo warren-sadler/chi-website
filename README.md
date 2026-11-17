@@ -5,7 +5,7 @@ A static, self-contained site: one `index.html`, an `assets/` folder, and the wh
 ## Files
 
 - `index.html` — the whole site: HTML, CSS and JavaScript in one file
-- `assets/` — logo, Index wheel, white paper cover, co-founder headshots. `logo-full-light.png` and `logo-mark-light.png` are copies of the logos with the glow and orange flares removed and the gold deepened so it reads on ivory, used in light mode.
+- `assets/` — logo, Index wheel, white paper cover, co-founder headshots. In light mode, `chi-logo-plum.png` replaces the gold logo in the home hero and `chi-mark-plum.png` replaces the gold mark in the nav and footer.
 - `white-paper.pdf` — the download offered after the white paper form is submitted
 
 ## Pages
@@ -38,7 +38,7 @@ Vercel or Cloudflare Pages also work, but their form handling would need a repla
 - **Social sharing:** add an Open Graph image (the white paper cover works well) and a favicon (the CHI monogram).
 - **Gating:** to keep the PDF from being shared directly, serve it from a signed or expiring URL, or email it after signup instead of linking to it.
 - **Headshot:** Warren's photo is only 200×200 px; swap in a larger original.
-- **Light-mode artwork:** the light logos were generated from the dark-background PNGs, and the Index wheel is shown on a dark disc in light mode. Proper light-background exports from the brand files would look cleaner.
+- **Light-mode artwork:** the Index wheel is shown on a dark disc in light mode; a light version of the wheel would fit better.
 
 ## Brand
 
