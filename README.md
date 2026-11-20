@@ -5,7 +5,7 @@ A static, self-contained site: one `index.html`, an `assets/` folder, and the wh
 ## Files
 
 - `index.html` — the whole site: HTML, CSS and JavaScript in one file
-- `assets/` — logo, Index wheel, white paper cover, co-founder headshots. In light mode, `chi-logo-plum.png` replaces the gold logo in the home hero and `chi-mark-plum.png` replaces the gold mark in the nav and footer.
+- `assets/` — logo, white paper cover, co-founder headshots. The Index wheel (ten capabilities in five lenses) is an inline SVG on `#the-index`, so it follows the theme colors; `assets/wheel.jpg` is the same wheel as a dark-only image, kept for decks and documents. In light mode, `chi-logo-plum.png` replaces the gold logo in the home hero and `chi-mark-plum.png` replaces the gold mark in the nav and footer.
 - `white-paper.pdf` — the download offered after the white paper form is submitted
 
 ## Pages
@@ -38,8 +38,6 @@ Vercel or Cloudflare Pages also work, but their form handling would need a repla
 - **Social sharing:** add an Open Graph image (the white paper cover works well) and a favicon (the CHI monogram).
 - **Gating:** to keep the PDF from being shared directly, serve it from a signed or expiring URL, or email it after signup instead of linking to it.
 - **Headshot:** Warren's photo is only 200×200 px; swap in a larger original.
-- **Light-mode artwork:** the Index wheel is shown on a dark disc in light mode; a light version of the wheel would fit better.
-
 ## Brand
 
 - Colors: background #110010, plum #2A0F24 / #3D1735, mauve #7A4A6C, gold #D4A64A, gold highlight #F2CF7A, champagne #F3E3BF, muted #A8909F
